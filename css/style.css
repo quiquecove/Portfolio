@@ -857,7 +857,8 @@ span {
     }
 
     .about-img {
-        width: 70vw;
+        /* width: 70vw; */
+        width: 40vw;
         margin-top: -2rem;
     }
 
@@ -923,14 +924,20 @@ span {
 
     .contact form .input-box input {
         width: 100%;
-        margin-left: 10rem;
+        /* margin-left: 10rem; */
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
+    
 }
 
 @media (max-width:365px) {
 
     .about-img {
-        width: 90vh;
+        /* width: 90vh; */
+        width: 20vh;
+        width: 40vw;
     }
 
     .footer {

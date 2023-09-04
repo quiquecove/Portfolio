@@ -82,3 +82,27 @@ ScrollReveal().reveal('.home-content h1, .about-img img', {
 ScrollReveal().reveal('.home-content h3, .home-content p, about-content ', {
     origin: 'right'
 });
+
+
+//formulario
+document.addEventListener('DOMContentLoaded', function() {
+  var formulario = document.getElementById('miFormulario');
+  var botonEnviar = document.getElementById('enviarBoton');
+
+  formulario.addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    // Cambia el texto del botón a "Enviando..." cuando se envía el formulario
+    botonEnviar.value = '¡Enviado!';
+
+    // Envía el formulario usando AJAX (puedes implementar esto en tu caso específico)
+    // Aquí puedes realizar la lógica de envío del formulario, como enviarlo al servidor
+
+    // Simulamos un retraso de 3 segundos (puedes eliminar esto en tu implementación real)
+    setTimeout(function() {
+      // Cambia el texto del botón de vuelta a "Enviar" después de un retraso
+      botonEnviar.value = 'Enviar';
+    }, 3000); // Cambia 3000 a la cantidad de milisegundos que desees
+  });
+});
+
