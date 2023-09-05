@@ -1,49 +1,67 @@
+/* Progress Bar Section */
 ul,
 li {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --bg-color: #fdfdfd;
+    --text-color: #333;
+    --main-color: #754ef9;
+    --white-color: #fdfdfd;
+    --shadow-color: rgba(0, 0, 0, 0);
+    --logo-color: color: #2c1e5c;
+    --form: #33333300;
+}
+.dark-mode {
+    --bg-color: #0b061f;
+    --text-color: #fdfdfd;
+    --shadow-color: rgba(0, 0, 0, .7);
+    --logo-color: color: #2c1e5c;
+    --form: #160d3e;
 }
 
 h1,
 h2,
 h3,
+h4,
 h5,
 h6 {
-    margin: 0;
+    margin: 0px;
 }
+
 .heading{
-padding-top: 20rem;
-padding-bottom: 20rem;
-}
-
-h1 {
-    position: absolute;
-    left: 30rem;
-    margin-left: 0;
-    margin-right: 4rem;
-    float: left;
-
+    padding: 10rem;
 }
 
 body {
     font-family: 'Noto Sans', sans-serif;
+    background:var(--bg-color);
+    
 }
 
 .custom-section {
     width: 100%;
     float: left;
+    padding: 50px 0;
 }
 
-/* .fake_div {
-    height: 10rem;
+.fake_div {
+    height: 500px;
     width: 100%;
-} */
+    float: left;
+}
 
 .custom-section .timeline-main {
     width: 100%;
     float: left;
-    /* padding: 50px 0; */
+    padding: 50px 0;
     position: relative;
+    background: var(--bg-color);
+    color: var(--text-color);
+    background: var(--bg-color);
+
 }
 
 .custom-section .timeline-main ul {
@@ -62,37 +80,56 @@ body {
     content: '';
     position: absolute;
     top: 0;
-    left: 25%;
+    left: 50%;
     transform: translateX(-50%);
     height: 15px;
     width: 15px;
     background-color: #000;
     border-radius: 50%;
-    border: 5px solid #000;
+    border: 5px solid var(--text-color);
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
     transition: all 500ms ease;
-    margin-right: 0;
 }
 
 .custom-section .timeline-main ul li.adding:before {
-    background-color: #fff;
+    background-color: var(--main-color);
 }
 
 .custom-section .timeline-main ul li:last-child {
-    padding-bottom: 0;
+    padding-bottom: 0px;
+}
+
+.custom-section .timeline-main ul li:nth-child(even) .custom-box {
+    float: right;
 }
 
 .custom-section .timeline-main ul li .custom-box {
     position: relative;
     width: calc(50% - 50px);
-    right: 0;
-    /* Cambiado de left a right */
+    right: 0px;
     background-color: #000;
-    padding: 0;
+    padding: 0px;
     box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
     text-align: center;
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
     transition: all 500ms ease;
-    float: center;
-    margin-left: 40rem;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, .1);
+    flex: 1 1 30rem;
+    background: var(--form);
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    box-shadow: 0 .1rem .5rem var(--shadow-color);
+    text-align: center;
+    border-top: .6rem solid var(--main-color);
+    border-bottom: .6rem solid var(--main-color);
+
 }
 
 .custom-section .timeline-main ul li.adding .custom-box {
@@ -106,32 +143,38 @@ body {
     height: auto;
     border-top: 12px solid transparent;
     border-bottom: 12px solid transparent;
-    border-right: 15px solid black;
+    border-left: 15px solid black;
+    right: -15px;
+}
+
+.custom-section .timeline-main ul li:nth-child(even) .custom-box:before {
     left: -15px;
-    /* margin-right: 5rem; */
+    right: auto;
+    transform: rotateY(180deg);
 }
 
 .custom-section .timeline-main ul li .custom-box h3 {
-    background-color: #fff;
     color: #000;
+    color: var(--main-color);
     padding: 8px 10px;
     font-size: 20px;
     line-height: 28px;
     text-transform: capitalize;
 }
 
+
 .custom-section .timeline-main ul li .custom-box p {
     font-size: 16px;
     line-height: 26px;
-    color: #fff;
-    padding: 20px;
+    color: var(--text-color);
+    padding: 20px 20px;
 }
 
 .timeline-main .progress-wrap {
     position: absolute;
     overflow: hidden;
     top: 0;
-    left: 25%;
+    left: 50%;
     transform: translateX(-50%);
     width: 10px;
     height: 100%;
@@ -148,9 +191,18 @@ body {
     border-radius: 10px;
     transform: translateX(-50%);
     position: absolute;
-    background-color: #fff;
+    background-color: var(--main-color);
 }
 
-.fake_div {
-    padding: 50rem;
+
+
+.custom-section .timeline-main ul li {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
 }
+
+
+
+
+
