@@ -36,8 +36,14 @@
         <div class="home-content">
             <h3>Hola, soy</h3>
             <h1>Enrique Huerta</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum velit expedita autem dolorum nisi, eius
-                iure
+            <p>
+            <p>Soy un <span class="titul">apasionado </span> desarrollador junior que actualmente está cursando el
+                segundo año del CFGS
+                <span class="titul"> Desarrollo de Aplicaciones Multiplataforma </span> (DAM). Mi <span
+                    class="titul">entusiasmo</span> por la programación y la tecnología me
+                motiva a enfrentar <span class="titul">nuevos desafíos </span> y a <span class="titul">seguir
+                    aprendiendo </span> cada día.
+            </p>
             </p>
 
             <div class="social-media">
@@ -71,7 +77,7 @@
 
                 <div class="profession" style="--i:3;">
                     <i class='bx bx-code-alt'></i>
-                    <h3>Web Developer</h3>
+                    <h3>Desktop Developer</h3>
                 </div>
                 <div class="circle"></div>
             </div>
@@ -89,10 +95,12 @@
         </div>
         <div class="about-content">
             <h2 class="heading">Sobre <span>mi </span></h2>
-            <h3>¡Hola, estoy aqui para ayudarte con tu siguiente proyecto!</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt libero corrupti unde id ullam
-                tenetur veritatis, voluptatibus, recusandae eius aut distinctio harum placeat fugit quas nulla
-                obcaecati, tempora perferendis consequuntur.</p>
+            <!-- <h3>¡Hola, estoy aqui para ayudarte con tu siguiente proyecto!</h3> -->
+            <h3>¡Conozcamonos un poco más!</h3>
+            <p>Soy un chico motivado con experiencia en desarrollo web y programación en Java. Además, cuento con
+                experiencia en el soporte de tecnologías de la información (IT). Mi pasión por la tecnología me impulsa
+                a enfrentar desafíos y seguir creciendo en mi carrera profesional.</p>
+
             <a href="timeline.html" class="btn">Más información</a>
         </div>
     </section>
@@ -154,21 +162,22 @@
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus, error qui provident culpa quo
                         assumenda quibusdam quia voluptas! Quidem beatae deleniti error voluptate expedita cupiditate
                         repudiandae labore quos iusto perferendis.</p>
-                        <a href="https://www.youtube.com/watch?v=FgKghjGOmec&ab_channel=CoolOSTeam" target="_blank"><i class='bx bx-link-external'></i></a>
-                    </div>
+                    <a href="https://www.youtube.com/watch?v=FgKghjGOmec&ab_channel=CoolOSTeam" target="_blank"><i
+                            class='bx bx-link-external'></i></a>
                 </div>
-                <!--  -->
-                <div class="portfolio-box">
-                    <img src="img/pb.png" alt="foto1">
-                    <div class="portfolio-layer">
-                        <h4>PirateBay.com</h4>
-                        <p>Este fue mi proyecto final de la asignatura Lenguaje de Marcas de primero de DAM.\n
-                            Se trata de un catalogo de películas de estreno, asi como de información sobre las mismas ademas
-                            de sus respectivos trailers.
-                        </p>
-                        <a href=""><i class='bx bx-link-external'></i></a>
-                    </div>
+            </div>
+            <!--  -->
+            <div class="portfolio-box">
+                <img src="img/pb.png" alt="foto1">
+                <div class="portfolio-layer">
+                    <h4>PirateBay.com</h4>
+                    <p>Este fue mi proyecto final de la asignatura Lenguaje de Marcas de primero de DAM.\n
+                        Se trata de un catalogo de películas de estreno, asi como de información sobre las mismas ademas
+                        de sus respectivos trailers.
+                    </p>
+                    <a href=""><i class='bx bx-link-external'></i></a>
                 </div>
+            </div>
             <!--  -->
             <div class="portfolio-box">
                 <img src="img/sos.png" alt="foto1">
@@ -236,41 +245,41 @@
 
     <!-- seccion de contacto -->
     <!-- seccion de contacto -->
-        <section class="contact" id="contact">
-            <h2 class="heading">Contacta <span>me!</span></h2>
-            <form id="miFormulario" action="procesarFormulario.php" method="post">
-                <div class="input-box">
-                    <input type="text" name="nombre" placeholder="Nombre Completo">
-                    <input type="email" name="email" placeholder="Correo electrónico">
-                </div>
-                <div class="input-box">
-                    <input type="number" name="movil" placeholder="Nº móvil">
-                    <input type="text" name="asunto" placeholder="Asunto del correo">
-                </div>
-                <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Tu mensaje"></textarea>
-                <input type="submit" class="btn" value="Enviar" id="enviarBoton">
-            </form>
-        </section>
-
-
-        <!-- footer -->
-        <footer class="footer">
-            <div class="footer-text">
-                <p>Copyright &copy; 2023 by Enrique Huerta (and Codehal) | Derechos reservados</p>
+    <section class="contact" id="contact">
+        <h2 class="heading">Contacta <span>me!</span></h2>
+        <form id="miFormulario" action="procesarFormulario.php" method="post">
+            <div class="input-box">
+                <input type="text" name="nombre" placeholder="Nombre Completo">
+                <input type="email" name="email" placeholder="Correo electrónico">
             </div>
-
-            <div class="footer-iconTop">
-                <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+            <div class="input-box">
+                <input type="number" name="movil" placeholder="Nº móvil">
+                <input type="text" name="asunto" placeholder="Asunto del correo">
             </div>
+            <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Tu mensaje"></textarea>
+            <input type="submit" class="btn" value="Enviar" id="enviarBoton">
+        </form>
+    </section>
 
-        </footer>
 
-        <!-- scroll reveal -->
-        <script src="https://unpkg.com/scrollreveal"></script>
-        <!-- swipper js -->
-        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2023 by Enrique Huerta (and Codehal) | Derechos reservados</p>
+        </div>
 
-        <script src="js/script.js"></script>
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+
+    </footer>
+
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- swipper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>
