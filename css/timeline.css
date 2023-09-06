@@ -13,6 +13,8 @@ li {
     --shadow-color: rgba(0, 0, 0, 0);
     --logo-color: color: #2c1e5c;
     --form: #33333300;
+    --anno: #170176;
+
 }
 .dark-mode {
     --bg-color: #0b061f;
@@ -20,6 +22,8 @@ li {
     --shadow-color: rgba(0, 0, 0, .7);
     --logo-color: color: #2c1e5c;
     --form: #160d3e;
+    --anno: #0a536b;
+
 }
 
 h1,
@@ -33,7 +37,14 @@ h6 {
 
 .heading{
     padding: 10rem;
+    color: var(--text-color);
 }
+
+h2{
+    color: var(--anno);
+    margin-bottom: 0;
+}
+
 
 body {
     font-family: 'Noto Sans', sans-serif;
@@ -44,7 +55,7 @@ body {
 .custom-section {
     width: 100%;
     float: left;
-    padding: 50px 0;
+    padding-top: 1rem;
 }
 
 .fake_div {
@@ -143,7 +154,7 @@ body {
     height: auto;
     border-top: 12px solid transparent;
     border-bottom: 12px solid transparent;
-    border-left: 15px solid black;
+    border-left: 15px solid var(--text-color);
     right: -15px;
 }
 
@@ -153,7 +164,7 @@ body {
     transform: rotateY(180deg);
 }
 
-.custom-section .timeline-main ul li .custom-box h3 {
+.custom-section .timeline-main ul li .custom-box h1 {
     color: #000;
     color: var(--main-color);
     padding: 8px 10px;
@@ -200,6 +211,90 @@ body {
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.5s, transform 0.5s;
+}
+
+@media (max-width:768px) {
+/* Reinicio de estilos */
+ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.custom-section {
+    width: 100%;
+    float: right;
+    padding: 10px 0;
+}
+
+.fake_div {
+    height: 500px;
+    width: 100%;
+    float: right;
+}
+
+.custom-section .timeline-main {
+    width: 170%;
+    float: right;
+    padding: 50px 0;
+    position: relative;
+}
+
+.custom-section .timeline-main ul {
+    width: 100%;
+    float: left;
+}
+
+.custom-section .timeline-main ul li {
+    width: 100%;
+    float: left;
+    position: relative;
+    padding-bottom: 30px;
+}
+
+.custom-section .timeline-main ul li:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 15; /* Cambiado de 50% a -15px para mover la flecha a la izquierda */
+    height: 15px;
+    width: 15px;
+    background-color: #000;
+    border-radius: 50%;
+    border: 5px solid #000;
+    transition: all 500ms ease;
+    float: left;
+}
+
+.custom-section .timeline-main ul li .custom-box {
+    position: relative;
+    width: calc(50% - 50px);
+    right: 0;
+    padding: 0;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: all 500ms ease;
+    float: right;
+    align-content: right;
+    margin-bottom: 10rem;
+    margin-right: 1rem;
+}
+
+.custom-section .timeline-main ul li .custom-box:before {
+    left: -15px;
+    right: auto;
+    transform: rotateY(180deg);
+}
+h2{
+    margin-top: 2rem;
+}
 }
 
 
