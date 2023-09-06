@@ -41,8 +41,13 @@ html {
     overflow-x: hidden;
 }
 
-.titul{
+.titul {
     color: var(--main-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
 }
 
 body {
@@ -199,6 +204,9 @@ section {
     font-weight: 600;
     border: .2rem solid transparent;
     transition: .5s ease;
+    text-decoration: none;
+    color: var(--text-color);
+
 }
 
 .btn:hover {
@@ -377,8 +385,18 @@ span {
     gap: 2rem;
 }
 
+.services .services-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    /* Cambiamos a align-items: flex-start para alinear las tarjetas en la parte superior del contenedor */
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
 .services-container .services-box {
-    flex: 1 1 30rem;
+    flex: 0 0 calc(50% - 2rem);
+    /* Establecemos el ancho de cada tarjeta al 50% del contenedor, restando el espacio entre tarjetas */
     background: var(--bg-color);
     padding: 3rem 2rem 4rem;
     border-radius: 2rem;
@@ -386,7 +404,8 @@ span {
     text-align: center;
     border-top: .6rem solid var(--main-color);
     border-bottom: .6rem solid var(--main-color);
-
+    height: 45rem;
+    margin-bottom: 2rem;
 }
 
 .services-box i {
@@ -411,6 +430,8 @@ span {
     box-shadow: 2rem var(--text-color);
     transform: translateY(-15px);
 }
+
+
 
 .portfolio {
     padding-bottom: 0;
@@ -441,7 +462,7 @@ span {
 }
 
 .portfolio-box:hover img {
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 
 .portfolio-box .portfolio-layer {
@@ -471,10 +492,11 @@ span {
 }
 
 .portfolio-layer p {
-    font-style: 1.6rem;
+    font-style: 2.6rem;
+    font-size: 1.3rem;
     margin: .3 .1;
     padding-bottom: 4rem;
-    
+
 }
 
 .portfolio-layer a {
@@ -751,6 +773,24 @@ span {
     .footer {
         padding: 2rem 3%;
     }
+
+    .services .services-container {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        /* Cambiamos a align-items: flex-start para alinear las tarjetas en la parte superior del contenedor */
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    .services-container .services-box {
+        height: auto;
+        /* Fijamos un alto fijo para todas las tarjetas */
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+
 }
 
 @media (max-width:768px) {
@@ -915,12 +955,14 @@ span {
     .testimonios-box .swiper-button-prev {
         display: none;
     }
+
     .portfolio .portfolio-container {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         align-items: center;
         gap: 2.5rem;
     }
+
     .portfolio-box .portfolio-layer {
         position: absolute;
         bottom: 0;
@@ -940,21 +982,21 @@ span {
         flex-wrap: wrap;
 
     }
-    
+
     .portfolio-box:hover .portfolio-layer {
         opacity: 1;
     }
-    
+
     .portfolio-layer h4 {
         font-size: 3rem;
     }
-    
+
     .portfolio-layer p {
         font-style: 1.6rem;
         margin: .3 .1;
         padding-bottom: 4rem;
     }
-    
+
     .portfolio-layer a {
         /* padding-top: 1rem;
         font-size: 2rem; */
@@ -966,20 +1008,59 @@ span {
         background: var(--white-color);
         border-radius: 50%;
     }
-    
+
     .portfolio-layer a i {
         font-size: 2rem;
         color: #333;
-    
+
     }
-    
 
 }
+
+.services .services-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    /* Cambiamos a align-items: flex-start para alinear las tarjetas en la parte superior del contenedor */
+    flex-wrap: wrap;
+    gap: 2rem;
+
+}
+
+
 
 @media (max-width:617px) {
     .portfolio .portfolio-container {
         grid-template-columns: 1fr;
     }
+
+    .services .services-container {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        /* Cambiamos a align-items: flex-start para alinear las tarjetas en la parte superior del contenedor */
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    .services-container .services-box {
+        flex: 1;
+        /* Cambiamos a flex: 1 para que cada tarjeta ocupe un fr */
+        background: var(--bg-color);
+        padding: 3rem 2rem 4rem;
+        border-radius: 2rem;
+        box-shadow: 0 .1rem .5rem var(--shadow-color);
+        text-align: center;
+        border-top: .6rem solid var(--main-color);
+        border-bottom: .6rem solid var(--main-color);
+        height: auto;
+        /* Eliminamos la altura fija para que se ajuste automáticamente */
+        margin-bottom: 2rem;
+        width: 100%;
+       
+    }
+
+
 }
 
 @media (max-width:450px) {
@@ -1003,11 +1084,11 @@ span {
     .home .profession-box .profession:nth-child(2) {
         transform: rotate(0deg)translate(5px, -335px);
         /* appdev */
-        
+
     }
 
     .home .profession-box .profession:nth-child(3) {
-        transform: rotate(90deg)translate(-105px, -460px); 
+        transform: rotate(90deg)translate(-105px, -460px);
         /* web dev */
     }
 
@@ -1024,7 +1105,7 @@ span {
         text-align: center;
     }
 
-    .portfolio-layer h4{
+    .portfolio-layer h4 {
         font-size: 2.5rem;
         margin-top: 1rem;
         margin-bottom: 2rem;
@@ -1036,7 +1117,15 @@ span {
         width: 3rem;
         height: 3rem;
     }
-    
+
+    .services-container {
+        width: 100%;
+    }
+
+    .services-container .services-box {
+        width: 100%;
+    }
+
 }
 
 @media (max-width:365px) {
