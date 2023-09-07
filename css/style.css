@@ -1057,7 +1057,7 @@ span {
         /* Eliminamos la altura fija para que se ajuste automáticamente */
         margin-bottom: 2rem;
         width: 100%;
-       
+
     }
 
 
@@ -1076,24 +1076,27 @@ span {
         padding: 0 3% 30rem;
     }
 
+    .profession-container .profession-box{
+        padding-top: 2rem;
+    }
     .home .profession-box .profession:nth-child(1) {
-        transform: rotate(-90deg)translate(-150px, -190px);
+        transform: rotate(-90deg)translate(-150px, -145px);
         /* sofdev */
     }
 
     .home .profession-box .profession:nth-child(2) {
-        transform: rotate(0deg)translate(5px, -335px);
+        transform: rotate(0deg)translate(5px, -280px);
         /* appdev */
 
     }
 
     .home .profession-box .profession:nth-child(3) {
-        transform: rotate(90deg)translate(-105px, -460px);
+        transform: rotate(90deg)translate(-120px, -410px);
         /* web dev */
     }
 
     .home .profession-box .profession:nth-child(4) {
-        transform: rotate(180deg)translate(-290px, -330px);
+        transform: rotate(180deg)translate(-290px, -280px);
         /* desk */
     }
 
@@ -1106,16 +1109,38 @@ span {
     }
 
     .portfolio-layer h4 {
-        font-size: 2.5rem;
+        font-size: 4rem;
         margin-top: 1rem;
         margin-bottom: 2rem;
+    }
+
+    .portfolio-layer p {
+        display: none;
     }
 
     .portfolio-layer a {
         /* padding-top: 1rem;
         font-size: 2rem; */
-        width: 3rem;
-        height: 3rem;
+        width: 4rem;
+        height: 4rem;
+    }
+
+
+    .home .profession-box .circle {
+        position: fixed;
+        width: 570px;
+        height: 570px;
+        z-index: -1;
+    }
+
+    .home .profession-container .overlay {
+        position: fixed;
+        top: 80rem;
+        left: 50%;
+        right: 0;
+        transform: rotate(90deg) translate(-50%, 50%) scaleY(3);
+        border-width: 23.9rem;
+
     }
 
     .services-container {
