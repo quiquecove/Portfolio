@@ -1059,8 +1059,37 @@ span {
         width: 100%;
 
     }
+    .profession-container .profession-box{
+        padding-top: 2rem;
+    }
+    .home .profession-box .profession:nth-child(1) {
+        transform: rotate(-90deg)translate(-150px, -145px);
+        /* sofdev */
+    }
+
+    .home .profession-box .profession:nth-child(2) {
+        transform: rotate(0deg)translate(5px, -280px);
+        /* appdev */
+
+    }
+
+    .home .profession-box .profession:nth-child(3) {
+        transform: rotate(90deg)translate(-120px, -410px);
+        /* web dev */
+    }
+
+    .home .profession-box .profession:nth-child(4) {
+        transform: rotate(180deg)translate(-290px, -280px);
+        /* desk */
+    }
 
 
+    .home .profession-box .circle {
+        position: fixed;
+        width: 570px;
+        height: 570px;
+        z-index: -1;
+    }
 }
 
 @media (max-width:450px) {
