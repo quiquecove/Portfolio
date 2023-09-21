@@ -8,7 +8,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $mensaje = $_POST['mensaje'];
 
     // Dirección de correo a la que se enviará el mensaje
-    $destinatario = 'quiquehuertalopez@gmail.com';
+    $destinatario = 'ehuelop@gmail.com';
 
     // Construye el mensaje de correo
     $contenido = "Nombre: $nombre\n";
@@ -16,6 +16,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $contenido .= "Nº móvil: $movil\n";
     $contenido .= "Asunto: $asunto\n";
     $contenido .= "Mensaje:\n$mensaje\n";
+    $contenido .= "Enviado el: " .date('d/m/Y',time());
 
     // Cabeceras del correo
     $headers = "From: $email";
