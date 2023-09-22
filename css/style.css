@@ -1163,6 +1163,7 @@ span {
         height: 570px;
         z-index: -1;
     }
+
     .social-media2 h3 {
         display: none;
     }
@@ -1257,9 +1258,9 @@ span {
         width: 100%;
     }
 
-    .social-media2 h3 {
+    /* .social-media2 h3 {
         display: none;
-    }
+    } */
 
 }
 
@@ -1279,6 +1280,47 @@ span {
         text-align: center;
         margin-top: 2rem;
     }
+
+    .social-media2 a {
+        display: flex;
+        justify-content: center;
+        /* Centra el contenido horizontalmente */
+        align-items: center;
+        /* Centra el contenido verticalmente */
+        width: 100%;
+        /* Cambiado a 80% */
+        height: 10rem;
+        margin-bottom: 2rem;
+        background: transparent;
+        border: .2rem solid var(--main-color);
+        /* border-top-right-radius: 5%;
+        border-top-left-radius: 5%;
+        border-bottom-right-radius: 5%;
+        border-bottom-left-radius: 5%; */
+        border-radius: 3rem;
+        box-shadow: 0 .2rem .5rem var(--shadow-color);
+        font-size: 2rem;
+        color: var(--main-color);
+        /* margin: 2.5rem 1.5rem 3rem 0; */
+        transition: .5s ease;
+    }
+
+    .social-media2 i {
+        font-size: 4rem;
+        width: 20%;
+        /* Ajusta el ancho del ícono */
+        text-align: center;
+        /* Centra el ícono horizontalmente */
+    }
+
+
+
+    .social-media2 a:hover {
+
+        background: var(--main-color);
+        color: var(--white-color);
+    }
+
     .social-media2 h3 {
         display: none;
     }
