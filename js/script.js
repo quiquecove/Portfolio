@@ -76,10 +76,10 @@ ScrollReveal().reveal('.home-content, .heading', {
 ScrollReveal().reveal('.home-img img, .services-container, .services-box, .portfolio-box, .testimonios-wrapper, .contact form,.about-content a', {
     origin: 'bottom'
 });
-ScrollReveal().reveal('.home-content h1, .about-img img', {
+ScrollReveal().reveal('.home-content h1, .about-img img,.tarjetaCont', {
     origin: 'left'
 });
-ScrollReveal().reveal('.home-content h3, .home-content p, about-content,.about-content p,.about-content h3 ', {
+ScrollReveal().reveal('.home-content h3, .home-content p, about-content,.about-content p,.about-content h3,.social-media2 a', {
     origin: 'right'
 });
 
