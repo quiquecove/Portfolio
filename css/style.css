@@ -397,7 +397,7 @@ section {
     position: absolute;
     bottom: 0;
     right: 0;
-    width: 70%;
+    width: 63%;
     pointer-events: none;
 
 }
@@ -414,8 +414,10 @@ span {
 }
 
 .about-img {
-    width: 40vh;
-    margin-right: 26rem;
+    /* transform: scale(0.2); */
+    transform-origin: left;
+    margin-right: 15rem;
+    height: auto;
 
 }
 
@@ -802,9 +804,23 @@ span {
     .home .profession-container .overlay {
         right: -15rem;
     }
+    .home-img img {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 51%;
+        pointer-events: none;
+    
+    }
 }
 
 @media (max-width:998px) {
+    .about-img {
+        /* width: 90vh; */
+        width: 60vw;
+        height: auto;
+        margin-right: 0.2rem;
+    }
 
     .navbar a:nth-child(1),
     .navbar a:nth-child(2) {
@@ -862,6 +878,14 @@ span {
     }
 
 
+}
+@media (max-width:998px) {
+    .about-img {
+        /* width: 90vh; */
+        width: 40vw;
+        height: auto;
+        margin-right: 30rem;
+    }
 }
 
 @media (max-width:768px) {
@@ -1000,9 +1024,10 @@ span {
     }
 
     .about-img {
-        /* width: 70vw; */
         width: 50vw;
-        margin-top: -2rem;
+        height: auto;
+        margin-top: 0rem;
+        transform: scale(1);
     }
 
     .services h2,
@@ -1101,6 +1126,11 @@ span {
 
 
 @media (max-width:617px) {
+    .about-img {
+        /* width: 90vh; */
+        width:50vw;
+        height: auto;
+    }
     .portfolio .portfolio-container {
         grid-template-columns: 1fr;
     }
@@ -1268,8 +1298,8 @@ span {
 
     .about-img {
         /* width: 90vh; */
-        width: 20vh;
-        width: 40vw;
+        width: 60vw;
+        height: auto;
     }
 
     .footer {
