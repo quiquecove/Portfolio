@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('../img/pelis.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.wrapper{
+    background-color: rgba(4,4,4,0.77);
+
+    width: 35em;
+    height: 35em;
+    border-radius: 40px;
+    border-style: solid;
+    border-width: 2px;
+}
+.flicker1 {
+    animation: parpadear-neon 7s infinite;
+}
+.flicker2 {
+    animation: parpadear-neon 4s infinite;
+}
+.flicker3 {
+    animation: parpadear-neon 3s infinite;
+}
+@keyframes parpadear-neon {
+
+    0%{
+        border-color: #FF5733; /* Cambiar a un color gris */
+        box-shadow: none; /* Eliminar el efecto de textura de neón */
+    }
+    12% {
+        border-color: #FF5733; /* Color naranja rojizo */
+        box-shadow: 0 0 2.5px 0.5px #FF5733, 0 0 5px 1px #FF5733, 0 0 7.5px 1.5px #FF5733, 0 0 10px 2px #FF5733, 0 0 12.5px 2.5px #FF5733, 0 0 15px 3px #FF5733, 0 0 17.5px 3.5px #FF5733, 0 0 20px 4px #FF5733; /* Efecto de textura de neón con radio reducido a la mitad */
+    }
+    22% {
+        border-color: #FF5733; /* Color naranja rojizo */
+        box-shadow: none; /* Eliminar el efecto de textura de neón */
+    }
+    32% {
+        border-color: gray; /* Cambiar a un color gris */
+        box-shadow: none; /* Eliminar el efecto de textura de neón */
+    }
+    42% {
+        border-color: #FF5733; /* Volver al color naranja rojizo */
+        box-shadow: 0 0 2.5px 0.5px #FF5733, 0 0 5px 1px #FF5733, 0 0 7.5px 1.5px #FF5733, 0 0 10px 2px #FF5733, 0 0 12.5px 2.5px #FF5733, 0 0 15px 3px #FF5733, 0 0 17.5px 3.5px #FF5733, 0 0 20px 4px #FF5733; /* Volver al efecto de textura de neón con radio reducido a la mitad */
+    }
+    62% {
+        border-color: #FF5733; /* Color naranja rojizo */
+        box-shadow: none; /* Eliminar el efecto de textura de neón */
+    }
+    72% {
+        border-color: gray; /* Color naranja rojizo */
+        box-shadow: none; /* Eliminar el efecto de textura de neón */ }
+    82% {
+        border-color: #FF5733; /* Volver al color naranja rojizo */
+        box-shadow: 0 0 2.5px 0.5px #FF5733, 0 0 5px 1px #FF5733, 0 0 7.5px 1.5px #FF5733, 0 0 10px 2px #FF5733, 0 0 12.5px 2.5px #FF5733, 0 0 15px 3px #FF5733, 0 0 17.5px 3.5px #FF5733, 0 0 20px 4px #FF5733; /* Volver al efecto de textura de neón con radio reducido a la mitad */
+    }
+    92% {
+        border-color: #FF5733; /* Cambiar a un color gris */
+        box-shadow: none; /* Eliminar el efecto de textura de neón */
+    }
+    100%{
+        border-color: gray; /* Cambiar a un color gris */
+        box-shadow: none; /* Eliminar el efecto de textura de neón */
+    }
+
+}
+
+
+
+.flicker4 {
+    animation: parpadear-neon-texto 5s infinite;
+}
+@keyframes parpadear-neon-texto {
+    0% {
+        color: #FF5733; /* Cambiar a un color gris */
+        text-shadow: none; /* Eliminar el efecto de textura de neón */
+    }
+    12% {
+        color: #FF5733; /* Color naranja rojizo */
+        text-shadow: 0 0 3px #FF5733, 0 0 5px #FF5733, 0 0 7px #FF5733, 0 0 9px #FF5733, 0 0 11px #FF5733, 0 0 13px #FF5733, 0 0 15px #FF5733; /* Efecto de textura de neón */
+    }
+    22% {
+        color: #FF5733; /* Color naranja rojizo */
+        text-shadow: none; /* Eliminar el efecto de textura de neón */
+    }
+    32% {
+        color: gray; /* Cambiar a un color gris */
+        text-shadow: none; /* Eliminar el efecto de textura de neón */
+    }
+    42% {
+        color: #FF5733; /* Volver al color naranja rojizo */
+        text-shadow: 0 0 3px #FF5733, 0 0 5px #FF5733, 0 0 7px #FF5733, 0 0 9px #FF5733, 0 0 11px #FF5733, 0 0 13px #FF5733, 0 0 15px #FF5733; /* Volver al efecto de textura de neón */
+    }
+    62% {
+        color: #FF5733; /* Color naranja rojizo */
+        text-shadow: none; /* Eliminar el efecto de textura de neón */
+    }
+    72% {
+        color: gray; /* Color naranja rojizo */
+        text-shadow: none; /* Eliminar el efecto de textura de neón */
+    }
+    82% {
+        color: #FF5733; /* Volver al color naranja rojizo */
+        text-shadow: 0 0 3px #FF5733, 0 0 5px #FF5733, 0 0 7px #FF5733, 0 0 9px #FF5733, 0 0 11px #FF5733, 0 0 13px #FF5733, 0 0 15px #FF5733; /* Volver al efecto de textura de neón */
+    }
+    92% {
+        color: #FF5733; /* Cambiar a un color gris */
+        text-shadow: none; /* Eliminar el efecto de textura de neón */
+    }
+    100% {
+        color: gray; /* Cambiar a un color gris */
+        text-shadow: none; /* Eliminar el efecto de textura de neón */
+    }
+}
+
+
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    flex-direction: column;
+}
+
+.loginFirst{
+    position: relative;
+    margin-right: 32%;
+}
+.loginSpaces{
+
+    margin-top: 2em;
+    font-size: 1.2em;
+}
+.input-box input {
+    color: black;
+    font-size: small;
+    font-weight: bold;
+    font-weight: 900;
+  }
+  .text-bold {
+    font-size: medium;
+    font-weight: bold;
+    font-weight: 900;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .boton-atras {
+    margin-left: 1em;
+  }
+
+  .btnColor{
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    background-color: rgb(131, 23, 23);
+    
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .btnColor:hover {
+    background-color: red; /* Cambia el color a rojo al colocar el cursor sobre el botón */
+  }

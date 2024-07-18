@@ -86,6 +86,19 @@ body {
     margin-right: auto;
 }
 
+.imgMia{
+    width: auto;
+    height: auto;
+    max-height: 75rem;
+    max-width: 40rem;
+
+}
+.imgMia2{
+    width: auto;
+    height: auto;
+    max-height: 80rem;
+
+}
 .navbar a {
     position: relative;
     font-size: 1.7rem;
@@ -527,6 +540,9 @@ span {
     border-radius: 2rem;
     box-shadow: 0 0 1rem rgba(0, 0, 0, .1);
     overflow: hidden;
+    min-height: 350px;
+    min-width: auto;
+    max-height: 350px;
 }
 
 .portfolio-box img {

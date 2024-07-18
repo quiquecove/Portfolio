@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/styleLog.css">
+    <link rel="stylesheet" href="./style/formStyle.css">
+</head>
+
+<body class="fondo">
+    <header>
+        <a href="login.html" class="logo flicker4">
+            <i class='bx bxs-movie flicker1'></i> PirateBay.es
+        </a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <!--Menu-->
+  
+        <a id="mostrar-formulario" class="btn">Sign In</a>
+    </header>
+    <div class="wrapper flicker1">
+        <div class="login" id="formulario-login" style="margin-left:auto;">
+            <h2 class="loginFirst flicker4">Login</h2>
+            <form action="#">
+                <div class="input-box loginSpaces text-bold">
+                    <span class="icon"></span>
+                    <input type="email" id="email" required>
+                    <label class="loginSpaces flicker4">Email</label>
+                </div>
+                <div class="input-box loginSpaces flicker4 text-bold">
+                    <span class="icon"></span>
+                    <input type="password" id="contrasena" required>
+                    <label>Password</label>
+                </div>
+                <button id="boton-acceder" class="btn text-bold">Acceder</button>
+            </form>
+
+        </div>
+
+        <div id="formulario-registro" style="display: none;" class="input-box">
+            <h2 class="formularioh2">Registro</h2>
+            <form class="formulario text-bold">
+              <label for="registro_email">Email:</label>
+              <input type="email" id="registro_email" required>
+          
+              <label for="registro_contrasena">Contraseña:</label>
+              <input type="password" id="registro_contrasena" required>
+          
+              <div class="button-container">
+                <button type="button" class="text-bold btnColor " id="boton-volver-atras">Volver Atrás</button>
+
+                <button type="submit" class="btn text-bold boton-atras" id="boton-regis">Registrarse</button>
+              </div>
+            </form>
+          </div>
+          
+
+    </div>
+    <script src="script/login.js"></script>
+
+</body>
+
+</html>
