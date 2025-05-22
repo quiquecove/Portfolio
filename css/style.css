@@ -57,6 +57,20 @@ body {
     padding: 0;
 }
 
+.portfolio-list {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    color: white;
+    text-align: left;
+    font-size: 1.3rem;
+}
+
+.portfolio-list li {
+    margin-bottom: 0.5rem;
+}
+
+
+
 .header {
     position: fixed;
     top: 0;
@@ -584,6 +598,7 @@ span {
     font-size: 1.3rem;
     margin: .3 .1;
     padding-bottom: 4rem;
+    text-align: justi;
 
 }
 
