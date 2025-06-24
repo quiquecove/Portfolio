@@ -90,4 +90,8 @@ $(document).ready(function () {
             revealCards();
         }
     });
+
+    // Mostrar las tarjetas iniciales al cargar la página
+    revealCards();
+    hideCards();
 });
